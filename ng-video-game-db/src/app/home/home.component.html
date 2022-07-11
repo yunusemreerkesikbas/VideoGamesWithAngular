@@ -1,0 +1,33 @@
+
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort</mat-label>
+        <mat-select
+            panelClass="sort-select"
+            [(ngModel)] ="sort"    
+        >
+            <mat-option value="name">Name</mat-option>
+            <mat-option value="-released">released</mat-option>
+            <mat-option value="-added">added</mat-option>
+            <mat-option value="-created">created</mat-option>
+            <mat-option value="-updated">updated</mat-option>
+            <mat-option value="-rating">rating</mat-option>
+            <mat-option value="-metacritic">metacritic</mat-option>
+
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="games">
+    <div class="game">
+        <div class="game-thumb-container">
+            <img src="https://cdn2.unrealengine.com/egs-evildeadthegame-saberinteractiveinc-s3-2560x1440-9155bfd9f6b9.jpg?h=720&resize=1&w=1280" alt="thumbnail" class="game-thumbnail">
+        </div>
+        <div class="game-description">
+            <p class="game-name">Name</p>
+            <div class="game-platforms">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/images/2021/06/battlefield-2042-key-art.jpg.adapt.crop1x1.767p.jpg" alt="slug" class="game-platform">
+            </div>
+        </div>
+    </div>
+</div>
