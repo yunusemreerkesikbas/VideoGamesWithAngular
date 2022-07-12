@@ -10,7 +10,8 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
   getGameList(
-{ ordering, search }: { ordering: string; search?: string; },
+  ordering : string,
+  search?: string
   ):Observable<APIResponse<Game>> {
     let params = new HttpParams().set('ordering', ordering);
     if (search) {
